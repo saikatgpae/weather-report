@@ -1,0 +1,21 @@
+.dashbord {
+  display: flex;
+  background-color: #5c9be5;
+  border-radius: 50px;
+  height: 80vh;
+}
+
+.time-temperature {
+  width: 25%;
+}
+
+.account {
+  /* display: block; */
+  background-color: #e3f1ff;
+  width: 75%;
+  border-radius: 50px;
+}
+
+.profile {
+  text-align: left;
+}

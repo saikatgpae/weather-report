@@ -1,0 +1,36 @@
+.bi-plus-square-fill {
+  background-color: white;
+}
+
+.plus {
+  /* background-color: white; */
+}
+
+.dot {
+  float: left;
+  width: 10px;
+
+  /* background-color: white; */
+}
+
+.invisible {
+  display: none;
+}
+
+.toggle {
+  border: none;
+  background-color: #5c9be5;
+}
+
+.togggle-off,
+.togggle-on {
+  color: white;
+
+  /* background-color: white; */
+}
+
+.celcious,
+.farenhite {
+  color: white;
+  font-size: 10px;
+}
