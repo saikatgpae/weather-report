@@ -1,4 +1,4 @@
-import Dashbord from './Dashbord/Dashbord';
+import Dashbord from './components/Dashbord/Dashbord';
 import './App.css';
 
 function App() {

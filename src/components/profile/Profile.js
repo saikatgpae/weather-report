@@ -1,6 +1,6 @@
 import React from 'react';
-import person from '../images/person.svg';
-import threedot from '../images/threedot.svg';
+import person from '../../images/person.svg';
+import threedot from '../../images/threedot.svg';
 
 export default function Profile() {
   return (
