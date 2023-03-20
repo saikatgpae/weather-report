@@ -68,7 +68,7 @@ export default function TempHeader(props) {
           </small>
         </div>
         <div className="d-flex align-items-center">
-          { newYorkHour > 12 ? <Sunrise /> : <Sunset />}
+          { newYorkHour > 12 ? <Sunset /> : <Sunrise />}
           <small className="text-light">
             &nbsp;
             {newYorkHour}
@@ -95,12 +95,12 @@ export default function TempHeader(props) {
         </div>
       </div>
       <div className="d-flex justify-content-center justify-content-between mt-4">
-        <img src={left} alt="left arrow" className="left" />
+        <img src={left} alt="left-arrow" className="left-arrow" />
         <h1 className="temparature text-light">
           {parseFloat(temp)}
           º
         </h1>
-        <img src={next} alt="next arrow" className="next" />
+        <img src={next} alt="next-arrow" className="next" />
       </div>
       <div className="d-flex align-items-center justify-content-center">
         <img src={sunny} alt="weather condition" className="next" />

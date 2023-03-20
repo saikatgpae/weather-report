@@ -18,17 +18,8 @@
 .time-temperature {
   width: 30%;
   background-image: url('../../images/background.jpeg');
-  background-size: 100% 350px;
+  background-size: 100% 300px;
   background-repeat: no-repeat;
   background-position-x: 0;
-  background-position-y: 90%;
-
-  /* background-position-y: 50%; */
-
-  /* height: 50vh; */
+  background-position-y: 85%;
 }
-
-/* .back {
-  height: 50vh;
-  background-image: url('../../images/background.jpeg');
-} */

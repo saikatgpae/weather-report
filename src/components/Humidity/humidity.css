@@ -1,0 +1,44 @@
+.humidity {
+  width: 30%;
+  height: 100px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.humidity-image {
+  background-color: #5c9be5;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.quality {
+  font-size: 10px;
+  color: #858181;
+}
+
+.hum-meter,
+.hum-fill1,
+.hum-fill2,
+.hum-fill3 {
+  border-radius: 2px;
+  height: 7px;
+}
+
+.hum-meter {
+  background-color: #dcdcdc;
+  width: 25%;
+}
+
+.hum-fill1,
+.hum-fill2,
+.hum-fill3 {
+  background-color: #5c9be5;
+}
+
+/*
+.hum-fill1,
+.hum-fill2,
+.hum-fill3 {
+    width: 0%;
+} */

@@ -1,0 +1,30 @@
+.hourly-info {
+  height: 40%;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.rain-prece,
+.next-day {
+  border: none;
+  border-radius: 10px;
+  font-size: 10px;
+}
+
+.rain-prece {
+  margin-right: 10px;
+}
+
+.downarrow {
+  color: rgb(131, 120, 120);
+}
+
+.area-box {
+  border-right: 0.5px solid black;
+  width: 14.29%;
+  height: 80px;
+}
+
+.left {
+  border-left: 0.5px solid black;
+}
