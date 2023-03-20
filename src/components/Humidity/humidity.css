@@ -36,9 +36,14 @@
   background-color: #5c9be5;
 }
 
-/*
-.hum-fill1,
-.hum-fill2,
+.hum-fill1 {
+  width: 100%;
+}
+
+.hum-fill2 {
+  width: 100%;
+}
+
 .hum-fill3 {
-    width: 0%;
-} */
+  width: 30%;
+}
