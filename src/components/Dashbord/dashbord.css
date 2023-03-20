@@ -2,20 +2,33 @@
   display: flex;
   background-color: #5c9be5;
   border-radius: 50px;
-  height: 80vh;
-}
-
-.time-temperature {
-  width: 25%;
+  height: 90vh;
 }
 
 .account {
-  /* display: block; */
   background-color: #e3f1ff;
-  width: 75%;
+  width: 70%;
   border-radius: 50px;
 }
 
 .profile {
   text-align: left;
 }
+
+.time-temperature {
+  width: 30%;
+  background-image: url('../../images/background.jpeg');
+  background-size: 100% 350px;
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  background-position-y: 90%;
+
+  /* background-position-y: 50%; */
+
+  /* height: 50vh; */
+}
+
+/* .back {
+  height: 50vh;
+  background-image: url('../../images/background.jpeg');
+} */

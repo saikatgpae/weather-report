@@ -1,5 +1,6 @@
 const intialState = [{
   name: 'Isabella',
+  location: 'New York, USA',
   temparature: 27.00,
 }];
 

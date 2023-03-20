@@ -7,7 +7,7 @@ import TempHeader from '../TempHeader/TempHeader';
 export default function Dashbord() {
   const weatherState = useSelector((state) => state.weatherReducer);
   const temp = weatherState[0].temparature;
-  console.log(weatherState[0]);
+
   return (
     <div className="dashbord">
       <div className="time-temperature p-4">
