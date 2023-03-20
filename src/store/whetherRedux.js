@@ -2,7 +2,7 @@ const intialState = [{
   name: 'Isabella',
   location: 'New York, USA',
   temparature: 27.00,
-  humidity: 82,
+  humidity: 90,
 }];
 
 const FAHRENHEIT = 'FAHRENHEIT';

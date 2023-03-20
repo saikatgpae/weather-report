@@ -32,9 +32,6 @@ export default function Dashbord() {
           </div>
           <Profile />
         </div>
-        {/* <h5 className="mt-4" style={{ float: 'left' }}>
-          More details of today&apos;s weather
-        </h5> */}
         <div className="mb-3">
           <WeatherInfoSevenhours />
         </div>

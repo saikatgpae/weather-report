@@ -1,3 +1,9 @@
+:root {
+  --bar1: 0%;
+  --bar2: 0%;
+  --bar3: 0%;
+}
+
 .humidity {
   width: 30%;
   height: 100px;
@@ -37,13 +43,13 @@
 }
 
 .hum-fill1 {
-  width: 100%;
+  width: var(--bar1);
 }
 
 .hum-fill2 {
-  width: 100%;
+  width: var(--bar2);
 }
 
 .hum-fill3 {
-  width: 30%;
+  width: var(--bar3);
 }
