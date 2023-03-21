@@ -5,9 +5,17 @@ import thermo from '../../images/thermo.svg';
 
 export default function FeelsLike() {
   const weatherState = useSelector((state) => state.weatherReducer);
+  // eslint-disable-next-line no-var
+  var value;
   const temp = weatherState[0].temparature;
   const r = document.querySelector(':root');
-  r.style.setProperty('--fill', `${temp * 2}%`);
+
+  if (temp >= 50) {
+    value = 50;
+  } else {
+    value = temp;
+  }
+  r.style.setProperty('--fill', `${value * 2}%`);
   return (
     <div className="feelslike p-3">
       <div className="d-flex justify-content-between">
