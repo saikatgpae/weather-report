@@ -85,7 +85,7 @@ export default function TempHeader(props) {
           {today}
         </small>
         <div className="d-flex align-items-center">
-          {date.getHours > 12 ? <Sunrise /> : <Sunset />}
+          {date.getHours > 12 ? <Sunset /> : <Sunrise />}
           <small className="text-light">
             &nbsp;
             {String(date.getHours()).padStart(2, '0')}
