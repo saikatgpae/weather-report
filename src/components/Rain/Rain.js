@@ -8,7 +8,11 @@ export default function Rain() {
   // eslint-disable-next-line
   const rain = weatherState[0].rain;
   const r = document.querySelector(':root');
-  r.style.setProperty('--rain', `${rain}%`);
+  if (rain > 100) {
+    r.style.setProperty('--rain', '100%');
+  } else {
+    r.style.setProperty('--rain', `${rain}%`);
+  }
   return (
     <div className="rain p-3">
       <div className="d-flex justify-content-between">

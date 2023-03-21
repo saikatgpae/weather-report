@@ -5,26 +5,32 @@ import humidity from '../../images/humidity.svg';
 
 export default function Humidity() {
   const weatherState = useSelector((state) => state.weatherReducer);
-  const temp = weatherState[0].humidity;
+  const hum = weatherState[0].humidity;
   const r = document.querySelector(':root');
   // eslint-disable-next-line no-var
   var value;
-  if (temp >= 33 && temp >= 66) {
+  if (hum >= 33 && hum >= 66) {
     r.style.setProperty('--bar1', '100%');
     r.style.setProperty('--bar2', '100%');
-    const wdth1 = (((temp - 66) * 100) / 33).toFixed(2);
+    const wdth1 = (((hum - 66) * 100) / 33).toFixed(2);
     r.style.setProperty('--bar3', `${wdth1}%`);
     value = 'bad';
   }
-  if (temp >= 33 && temp < 66) {
+  if (hum >= 33 && hum < 66) {
     r.style.setProperty('--bar1', '100%');
-    const wdth = (((temp - 33) * 100) / 33).toFixed(2);
+    const wdth = (((hum - 33) * 100) / 33).toFixed(2);
     r.style.setProperty('--bar2', `${wdth}%`);
     value = 'normal';
   }
-  if (temp < 33) {
-    const wdth = ((temp * 100) / 33).toFixed(2);
+  if (hum < 33) {
+    const wdth = ((hum * 100) / 33).toFixed(2);
     r.style.setProperty('--bar1', `${wdth}%`);
+    value = 'good';
+  }
+  if (hum > 100) {
+    r.style.setProperty('--bar1', '100%');
+    r.style.setProperty('--bar2', '100%');
+    r.style.setProperty('--bar3', '100%');
     value = 'good';
   }
 
@@ -36,7 +42,7 @@ export default function Humidity() {
       </div>
       <div className="d-flex justify-content-center align-items-baseline m-0 p-0">
         <small className="temp">
-          {temp}
+          {hum}
           %
         </small>
         <small>

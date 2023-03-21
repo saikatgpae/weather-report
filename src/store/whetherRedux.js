@@ -5,6 +5,7 @@ const intialState = [{
   humidity: 82,
   rain: 42,
   uv: 4,
+  precipitation: 1.4,
 }];
 
 const FAHRENHEIT = 'FAHRENHEIT';
