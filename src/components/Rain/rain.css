@@ -1,6 +1,28 @@
+:root {
+  --rain: 0%;
+}
+
 .rain {
   width: 30%;
   height: 100px;
   background-color: white;
   border-radius: 15px;
+}
+
+.rain-meter,
+.rain-fill {
+  border-radius: 2px;
+  height: 7px;
+}
+
+.rain-meter {
+  background-color: #dcdcdc;
+  width: 100%;
+}
+
+.rain-fill {
+  background-color: #5c9be5;
+
+  /* width: 50%; */
+  width: var(--rain);
 }
