@@ -35,7 +35,7 @@ export default function Humidity() {
         <img src={humidity} alt="Humidity logo" className="humidity-image" />
       </div>
       <div className="d-flex justify-content-center align-items-baseline m-0 p-0">
-        <small className="fw-bold">
+        <small className="temp">
           {temp}
           %
         </small>

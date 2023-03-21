@@ -53,3 +53,8 @@
 .hum-fill3 {
   width: var(--bar3);
 }
+
+.temp {
+  font-size: larger;
+  font-weight: 900;
+}

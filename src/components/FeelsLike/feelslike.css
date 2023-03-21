@@ -1,3 +1,7 @@
+:root {
+  --fill: 0%;
+}
+
 .feelslike {
   width: 30%;
   height: 100px;
@@ -10,4 +14,22 @@
   border-radius: 5px;
   width: 30px;
   height: 30px;
+}
+
+.temp-meter,
+.temp-fill {
+  border-radius: 2px;
+  height: 7px;
+}
+
+.temp-meter {
+  background-color: #dcdcdc;
+  width: 100%;
+}
+
+.temp-fill {
+  background-color: #5c9be5;
+
+  /* width: 50%; */
+  width: var(--fill);
 }
