@@ -22,7 +22,5 @@
 
 .rain-fill {
   background-color: #5c9be5;
-
-  /* width: 50%; */
   width: var(--rain);
 }

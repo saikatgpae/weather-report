@@ -1,3 +1,11 @@
+:root {
+  --uvbar1: 0%;
+  --uvbar2: 0%;
+  --uvbar3: 0%;
+  --uvbar4: 0%;
+  --uvbar5: 0%;
+}
+
 .uvindex {
   width: 30%;
   height: 100px;
@@ -10,4 +18,47 @@
   border-radius: 5px;
   width: 30px;
   height: 30px;
+}
+
+.uv-meter,
+.uv-fill1,
+.uv-fill2,
+.uv-fill3,
+.uv-fill4,
+.uv-fill5 {
+  border-radius: 2px;
+  height: 7px;
+}
+
+.uv-meter {
+  background-color: #dcdcdc;
+  width: 15%;
+}
+
+.uv-fill1,
+.uv-fill2,
+.uv-fill3,
+.uv-fill4,
+.uv-fill5 {
+  background-color: #5c9be5;
+}
+
+.uv-fill1 {
+  width: var(--uvbar1);
+}
+
+.uv-fill2 {
+  width: var(--uvbar2);
+}
+
+.uv-fill3 {
+  width: var(--uvbar3);
+}
+
+.uv-fill4 {
+  width: var(--uvbar4);
+}
+
+.uv-fill5 {
+  width: var(--uvbar5);
 }
