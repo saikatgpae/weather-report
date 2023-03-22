@@ -5,8 +5,8 @@ Description
 This app display the weather report of your current location.
 You can use the toggle switch to convert the temperature from celsius to fahrenheit.The entire weather data is stored in redux and all components are displaying the data fetching from the Redux state.
 
-<img src="./src/images/appScreenshot1.png" alt="App screen shot" width="350" />
-<img src="./src/images/appScreenshot2.png" alt="App screen shot" width="350" />
+<img src="./src/images/appScreenshot1.png" alt="App screen shot" width="550" />
+<img src="./src/images/appScreenshot2.png" alt="App screen shot" width="550" />
 
 ## Built With
 
