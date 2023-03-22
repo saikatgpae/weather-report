@@ -1,27 +1,55 @@
+/* eslint-disable */
 import React from 'react';
-import GaugeChart from 'react-gauge-chart';
-import './gauge.css';
+import { useGauge } from 'use-gauge';
+import { useSelector } from 'react-redux';
+import './gauge.css'
 
 export default function Gauge() {
-//   const gauge = 0.10;
+    const weatherState = useSelector((state) => state.weatherReducer);
+  // eslint-disable-next-line
+  const wind = weatherState[0].wind;
+  const value = wind;
+  const minValue = 0;
+  const arcStrokeWidth = 7;
+  const strokeLineCap = 'round';
+  const progressColor = '#5C9BE5';
+  const tickColor = 'black';
+  const tickLength = 3;
+  const baseRadius = 3;
+  const {
+    ticks, getTickProps, getLabelProps, valueToAngle, angleToValue,getArcProps, getNeedleProps, getSVGProps,}
+    = useGauge({ startAngle: 90, endAngle: 270, numTicks: 5, diameter: 60, domain: [0, 40]});
+
+  const { points } = getNeedleProps({ value, baseRadius, tipRadius: 1 });
+
   return (
-    <div>
-      <GaugeChart
-        id="gauge-chart1"
-        nrOfLevels={5}
-        className="gauge"
-        textColor="#000"
-        formatTextValue={(value) => value}
-        colors={['#DCDCDC']}
-        arcWidth={0.1}
-        percent={0.32}
-        arcPadding={0.1}
-        cornerRadius={5}
-        animate={false}
-        needleColor="#5c9be5"
-        // hideText={false}
-        // arcsLength={[0.1, 0.1, 0.1, 0.1, 0.1]}
-      />
-    </div>
+    <>
+        <div className="gauge-container flex items-center justify-center">
+        <svg {...getSVGProps()} className="gauge max-w-full overflow-visible">
+            <path {...getArcProps({ offset: 8, startAngle: 90, endAngle: 270 })} fill="none" className="stroke-gray-100" 
+            strokeWidth={arcStrokeWidth} strokeLinecap={strokeLineCap} />
+            {value > minValue && (
+            <path {...getArcProps({ offset :8, startAngle: 90, endAngle: valueToAngle(value) })} fill="none" stroke={progressColor} strokeWidth={arcStrokeWidth} strokeLinecap={strokeLineCap} />
+            )}
+            <g id="ticks">
+                {ticks.map((angle) => {
+                    return (
+                    <React.Fragment key={`tick-group-${angle}`}>
+                        <line stroke={tickColor} {...getTickProps({ angle, length: tickLength })} />
+                        <text className="tick-text fill-gray-500" {...getLabelProps({ angle, offset: -15 })}>
+                        {angleToValue(angle)}
+                        </text>
+                    </React.Fragment>
+                    );
+                })}
+            </g>
+            <g id="needle">
+            <polyline fill="#619DE6" points={points} />
+            <circle fill="#619DE6" r={3} />
+            </g>
+        </svg>
+        </div>
+        <text className="wind-value">{value}&nbsp;km/h</text>
+    </>
   );
 }

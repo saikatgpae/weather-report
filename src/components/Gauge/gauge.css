@@ -1,5 +1,7 @@
-.gauge {
-  /* width: 50px; */
+.tick-text {
+  font-size: 6px;
+}
 
-  /* color: #5C9BE5; */
+.wind-value {
+  font-size: 15px;
 }
