@@ -1,14 +1,17 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import nextarrow from '../../images/next.svg';
 import downarrow from '../../images/downarrow.svg';
 import './weatherInfoSevenhours.css';
 import Cloudy from '../Cloudy/Cloudy';
 import Sunny from '../Sunny/Sunny';
-// /* eslint-disable */
+
 export default function WeatherInfoSevenhours() {
+  const weatherState = useSelector((state) => state.weatherReducer);
+  // eslint-disable-next-line
+  const precipitations = weatherState[0].precipitations;
   const areaStyle = { fill: '#5C9BE5', stroke: '#5C9BE5', strokeWidth: '1' };
-  const precipitations = [23, 29, 58, 75, 33, 20, 73, 49];
   const times = ['Now', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00'];
   return (
     <div className="hourly-info p-4">

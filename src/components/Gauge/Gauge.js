@@ -49,7 +49,7 @@ export default function Gauge() {
             </g>
         </svg>
         </div>
-        <text className="wind-value">{value}&nbsp;km/h</text>
+        <small className="wind-value">{value}&nbsp;km/h</small>
     </>
   );
 }

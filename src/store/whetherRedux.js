@@ -7,6 +7,7 @@ const intialState = [{
   uv: 4,
   precipitation: 1.4,
   wind: 8,
+  precipitations: [23, 29, 58, 75, 33, 20, 73, 49],
 }];
 
 const FAHRENHEIT = 'FAHRENHEIT';
