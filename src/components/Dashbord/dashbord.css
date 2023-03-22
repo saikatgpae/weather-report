@@ -1,0 +1,25 @@
+.dashbord {
+  display: flex;
+  background-color: #5c9be5;
+  border-radius: 50px;
+  height: 90vh;
+}
+
+.account {
+  background-color: #e3f1ff;
+  width: 70%;
+  border-radius: 50px;
+}
+
+.profile {
+  text-align: left;
+}
+
+.time-temperature {
+  width: 30%;
+  background-image: url('../../images/background.jpeg');
+  background-size: 100% 300px;
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  background-position-y: 85%;
+}
